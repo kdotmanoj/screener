@@ -19,7 +19,7 @@ const parameters = [
 ];
 
 const ExampleQuery = () => (
-  <div className="bg-blue-50 rounded-lg px-7py-5">
+  <div className="bg-blue-50 rounded-lg px-7 py-5">
     <h3 className="text-sm font-medium text-blue-800 mb-2">Example Query:</h3>
     <pre className="font-mono text-sm text-blue-700">
       {'marketCap > 500 AND\npeRatio < 15 AND\nroe > 20'}
@@ -32,7 +32,7 @@ const ParametersList = () => (
     <h3 className="text-sm font-medium text-gray-800 mb-2">Available Parameters:</h3>
     <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
       {parameters.map(param => (
-        <div key={param.value} className="font-mono">{param.label}</div>
+        <div key={param.value} className="font-mono">{param.value}</div>
       ))}
     </div>
   </div>
@@ -70,7 +70,7 @@ export default function QueryBuilder({ onQueryChange }) {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 py-2">
       <div className="relative flex justify-between px-1.5">
         <textarea
           value={queryText}

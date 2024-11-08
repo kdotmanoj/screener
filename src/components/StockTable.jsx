@@ -121,7 +121,7 @@ export default function StockTable({ queryConditions }) {
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
                   >
                     <div className="flex items-center space-x-1">
-                      <span>{column.render('Header')}</span>
+                      <span className='text-blue-500 text-base'>{column.render('Header')}</span>
                       <span>
                         {column.isSorted ? (
                           column.isSortedDesc ? (
