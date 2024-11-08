@@ -22,7 +22,7 @@ const ExampleQuery = () => (
   <div className="bg-blue-50 rounded-lg px-7 py-5">
     <h3 className="text-sm font-medium text-blue-800 mb-2">Example Query:</h3>
     <pre className="font-mono text-sm text-blue-700">
-      {'marketCap > 500 AND\npeRatio < 15 AND\nroe > 20'}
+      {'marketCap > 300 AND\npeRatio < 10 AND\nroe > 20'}
     </pre>
   </div>
 );
@@ -75,7 +75,7 @@ export default function QueryBuilder({ onQueryChange }) {
         <textarea
           value={queryText}
           onChange={handleQueryTextChange}
-          placeholder="Enter your query here (e.g., 'marketCap > 10000 AND peRatio < 15')"
+          placeholder="Enter your query here (e.g., 'marketCap > 200')"
           className="w-2/3 h-32 p-4 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-mono resize-none"
         />
         <div className="w-1/3 pl-5">
